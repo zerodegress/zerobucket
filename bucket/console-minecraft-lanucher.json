@@ -20,7 +20,7 @@
     "autoupdate": {
         "url": "https://github.com/MrShieh-X/console-minecraft-launcher/releases/download/$version/cmcl.exe",
         "hash": {
-            "url": "$url.sha512"
+            "url": "$url.sha256"
         }
     },
     "checkver": {
