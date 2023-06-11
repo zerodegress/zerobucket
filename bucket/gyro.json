@@ -1,0 +1,47 @@
+{
+    "version": "0.7.0",
+    "description": "A Zig package manager with an index, build runner, and build dependencies. ",
+    "homepage": "https://github.com/mattnite/gyro",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mattnite/gyro/releases/download/0.7.0/gyro-0.7.0-windows-x86_64.zip",
+            "hash": "DCC73AFD69AE794FD98DF5BBC11EB36BA252244C0CAC9E7C7196F663A13F3AEC",
+            "extract_dir": "gyro-0.7.0-windows-x86_64"
+        },
+        "32bit": {
+            "url": "https://github.com/mattnite/gyro/releases/download/0.7.0/gyro-0.7.0-windows-i386.zip",
+            "hash": "78B8C58D64FB6CA10081A7BAC1201E24DF17EF82CBE22718F8C5725972AE8A43",
+            "extract_dir": "gyro-0.7.0-windows-i386"
+        }
+    },
+    "suggest": {
+        "zig": [
+            "zig",
+            "versions/zig-dev"
+        ]
+    },
+    "env_add_path": "bin",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mattnite/gyro/releases/download/$version/gyro-$version-windows-x86_64.zip",
+                "hash": {
+                    "url": "$url.sha256"
+                },
+                "extract_dir": "gyro-$version-windows-x86_64"
+            },
+            "32bit": {
+                "url": "https://github.com/mattnite/gyro/releases/download/$version/gyro-$version-windows-i386.zip",
+                "hash": {
+                    "url": "$url.sha256"
+                },
+                "extract_dir": "gyro-$version-windows-i386"
+            }
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/mattnite/gyro/releases",
+        "regex": "gyro-([\\d.]+)-windows"
+    }
+}
