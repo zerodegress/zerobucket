@@ -17,7 +17,13 @@
                 "url": "https://github.com/arch1t3cht/Aegisub/releases",
                 "regex": "Feature Release \\d+"
             },
-            "bin": "aegisub.exe"
+            "bin": "aegisub.exe",
+            "shortcuts": [
+                [
+                    "aegisub.exe",
+                    "Aegisub"
+                ]
+            ]
         }
     },
     "autoupdate": {
