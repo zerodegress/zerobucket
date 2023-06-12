@@ -1,5 +1,5 @@
 {
-    "version": "2.1.4",
+    "version": "feature_09",
     "description": "Cross-platform advanced subtitle editor, with new feature branches.",
     "homepage": "https://github.com/arch1t3cht/Aegisub",
     "license": "https://raw.githubusercontent.com/arch1t3cht/Aegisub/feature/LICENCE",
@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/arch1t3cht/Aegisub/releases/download/feature_$version/Windows.MSVC.Release.-.portable.zip",
+                "url": "https://github.com/arch1t3cht/Aegisub/releases/download/$version/Windows.MSVC.Release.-.portable.zip",
                 "hash": {
                     "url": "$url.sha256"
                 }
