@@ -9,7 +9,7 @@
             "hash": "5A1E54666F1BEE497E17AFD38EAF367F741F6029E7A600922A540388E05C1938",
             "installer": {
                 "script": [
-                    "Expand-7zipArchive \"$dir\\aegisub-portable-64.zip\" \"$dir\" \"aegisub-portable\"",
+                    "Expand-7zipArchive \"$dir\\aegisub-portable-64.zip\" \"$dir\" -ExtractDir \"aegisub-portable\"",
                     "Remove-Item \"$dir\\aegisub-portable-64.zip\""
                 ]
             },
