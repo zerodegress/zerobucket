@@ -10,7 +10,7 @@
             "java/openjdk11"
         ]
     },
-    "pre_install": "Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/RW-HPS/RW-HPS/master/StartServer/Start.bat\" -OutFile \"rwhps.bat\"",
+    "pre_install": "Invoke-WebRequest -Uri \"$dir\\https://raw.githubusercontent.com/RW-HPS/RW-HPS/master/StartServer/Start.bat\" -OutFile \"$dir\\rwhps.bat\"",
     "bin": "rwhps.bat",
     "autoupdate": {
         "url": "https://github.com/RW-HPS/RW-HPS/releases/download/$version/Server-All.jar",
