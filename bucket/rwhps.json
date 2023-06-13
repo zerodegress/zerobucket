@@ -10,8 +10,8 @@
             "java/openjdk11"
         ]
     },
-    "pre_install": "Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/RW-HPS/RW-HPS/master/StartServer/Start.bat\" -OutFile \"$dir\\rwhps.bat\"",
-    "bin": "rwhps.bat",
+    "pre_install": "Write-Output \"java -Xmx512M -Djava.net.preferIPv4Stack=true -Dfile.encoding=UTF-8 -jar \"$PSScriptRoot\\Server-All.jar\"\" > \"$dir\\rwhps.ps1\"",
+    "bin": "rwhps.ps1",
     "autoupdate": {
         "url": "https://github.com/RW-HPS/RW-HPS/releases/download/$version/Server-All.jar",
         "hash": {
